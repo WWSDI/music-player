@@ -26,6 +26,7 @@ export default function PlayerLayout({ children }) {
       </Box>
       <Box
         id="playerContainer"
+        // when use position, define anchor point (i.e. top, left etc.) so that the positioning won't change due to other components such as, specifically here, the mainPageContainer component
         position="absolute"
         left="0"
         bottom="0"
