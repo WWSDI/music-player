@@ -11,7 +11,6 @@ export default function PlayerLayout({ children }) {
         position="absolute"
         top="0"
         left="0"
-        height={`calc(100% - ${playerHeight})`}
         width={sideBarWidth}
         border="1px solid yellow"
       >
@@ -20,7 +19,7 @@ export default function PlayerLayout({ children }) {
       <Box
         id="mainPageContainer"
         marginLeft={sideBarWidth}
-        width={`calc(100% - ${sideBarWidth})`}
+        marginBottom={playerHeight}
       >
         {children}
       </Box>
@@ -30,8 +29,6 @@ export default function PlayerLayout({ children }) {
         position="absolute"
         left="0"
         bottom="0"
-        height={playerHeight}
-        width="100vw"
         border="1px solid blue"
       >
         Player
