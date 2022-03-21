@@ -6,6 +6,7 @@ export default function PlayerLayout({ children }) {
         <Box>
             Layout
             {children}
+            <SideBar />
         </Box>
     )
 }
